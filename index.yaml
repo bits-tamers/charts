@@ -12,7 +12,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 0.39.2
-    created: "2025-09-11T12:33:19.956832099Z"
+    created: "2025-09-11T13:35:15.560039397Z"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -53,7 +53,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.32.3
-    created: "2025-09-11T12:33:19.934400119Z"
+    created: "2025-09-11T13:35:15.535282079Z"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -84,4 +84,45 @@ entries:
     urls:
     - https://bits-tamers.github.io/charts/thanos-12.13.6.tgz
     version: 12.13.6
-generated: "2025-09-11T12:33:19.915955044Z"
+  - annotations:
+      category: Analytics
+      images: |
+        - name: os-shell
+          image: docker.io/bitamer/os-shell:11-debian-11-r72
+        - name: thanos
+          image: docker.io/bitamer/thanos:0.32.3-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.32.3
+    created: "2025-09-11T13:35:15.578468678Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: 2c53c76ffb442ffcc3fb367f734c92bfc79bebf52123f687f2a9de3704ad7374
+    home: https://bitamer.com
+    icon: https://thanos.io/icon-dark.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - name: Bitamer
+      url: https://github.com/bitamer/charts
+    name: thanos
+    sources:
+    - https://github.com/bits-tamers/charts/thanos
+    urls:
+    - https://bits-tamers.github.io/charts/thanos-v0.0.1.tgz
+    version: v0.0.1
+generated: "2025-09-11T13:35:15.516396581Z"
