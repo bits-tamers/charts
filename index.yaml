@@ -1,5 +1,17 @@
 apiVersion: v1
 entries:
+  a2rps:
+  - apiVersion: v2
+    appVersion: v0.0.4
+    created: "2025-12-29T04:04:20.844670258Z"
+    description: A Helm chart for deploying the Apache2 Reverse Proxy with OIDC/OAuth2
+      authentication.
+    digest: cef880a58806f0c996c380469ebdf68f28817f6653a0a4381a85d4fc10f570c4
+    name: a2rps
+    type: application
+    urls:
+    - https://bits-tamers.github.io/charts/a2rps-0.1.1.tgz
+    version: 0.1.1
   thanos:
   - annotations:
       category: Analytics
@@ -12,7 +24,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 0.39.2
-    created: "2025-09-11T13:35:15.560039397Z"
+    created: "2025-12-29T04:04:20.865931365Z"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -53,7 +65,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.32.3
-    created: "2025-09-11T13:35:15.535282079Z"
+    created: "2025-12-29T04:04:20.852567666Z"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -94,7 +106,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.32.3
-    created: "2025-09-11T13:35:15.578468678Z"
+    created: "2025-12-29T04:04:20.877428416Z"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -125,4 +137,4 @@ entries:
     urls:
     - https://bits-tamers.github.io/charts/thanos-v0.0.1.tgz
     version: v0.0.1
-generated: "2025-09-11T13:35:15.516396581Z"
+generated: "2025-12-29T04:04:20.844246578Z"
